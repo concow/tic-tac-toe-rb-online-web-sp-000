@@ -104,3 +104,4 @@ def play(board)
     puts "Cat's game!"
   end
 end
+end
