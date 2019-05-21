@@ -79,7 +79,6 @@ end
 
 def draw?(board)
   !won?(board) && full?(board)      #call to methods if board NOT won, but is FULL! Returns true only in those cases!
-  puts "Cat's Game!"
 end
 
 def over?(board)
@@ -93,6 +92,7 @@ def play(board)
   puts "Congratulations!"
   draw?(board)
   puts "Cat's game!"
+end
 
 def winner(board)
 if won?(board)
