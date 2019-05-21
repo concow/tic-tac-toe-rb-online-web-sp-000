@@ -87,8 +87,10 @@ def over?(board)
 end
 
 def winner(board)
-  if winning_combo = won?(board)
-    board[winning_combo.first]
+  if won?(board)
+    return board[won?(board)[0]]
+  else
+    return nil
   end
 end
 
@@ -96,10 +98,10 @@ def play(board)
   while !over?(board)
     turn(board)
   end
-
-   if won?(board)
+  if won?(board)
     puts "Congratulations #{winner(board)}!"
   elsif draw?(board)
-    puts "Cats Game!"
+    puts "Cat's game!"
   end
+end
 end
