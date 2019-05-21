@@ -48,16 +48,6 @@ def position_taken?(board, location)
   board[location] != " " && board[location] != ""
 end
 
-def play(board)
-  turn_counter = 0            #initialize number of turns to count to start at 0 (Therefore we get 9 loops)
-  while turn_counter < 9      #while turns are <= to 9
-    turn(board)               #make your turn
-    turn_counter += 1         #add to turn count loop
-  end
-end
-#turn_count takes in argument board array, returns number of turns that have been played
-#current_player method takes in an argument of board array and uses #turn_count method to determine if it is "X"'s turn or "O"'s
-
 def turn_count(board)
   turns = 0                             #initialize turns variable starting at 0
   board.each do |token|                 #iterate each element on board. token is variable label for our array to be passed into the block of code
@@ -94,6 +84,13 @@ end
 
 def over?(board)
     won?(board) || draw?(board) || full?(board)
+end
+def play(board)
+  turn_counter = 0            #initialize number of turns to count to start at 0 (Therefore we get 9 loops)
+  while turn_counter < 9      #while turns are <= to 9
+    turn(board)               #make your turn
+    turn_counter += 1         #add to turn count loop
+  end
 end
 
 def winner(board)
