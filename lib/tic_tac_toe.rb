@@ -86,12 +86,8 @@ def over?(board)
     won?(board) || draw?(board) || full?(board)
 end
 def play(board)
-  turn_counter = 0            #initialize number of turns to count to start at 0 (Therefore we get 9 loops)
-  while turn_counter < 9      #while turns are <= to 9
-    turn(board)               #make your turn
-    turn_counter += 1         #add to turn count loop
-  end
-end
+  while !over?(board)
+    turn(board)
 
 def winner(board)
 if won?(board)
