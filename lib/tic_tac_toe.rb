@@ -48,10 +48,6 @@ def position_taken?(board, location)
   board[location] != " " && board[location] != ""
 end
 
-def move(board, index, value)
-  board[index] = value                #set move on our board equal to a value. Default is X.
-end
-
 def play(board)
   turn_counter = 0            #initialize number of turns to count to start at 0 (Therefore we get 9 loops)
   while turn_counter < 9      #while turns are <= to 9
