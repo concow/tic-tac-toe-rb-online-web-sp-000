@@ -26,6 +26,10 @@ end
 def move(board, index, value)
   board[index] = value
 end
+def position_taken?(board, location)
+  board[location] != " " && board[location] != ""
+end
+
 def valid_move?(board, index)
   index.between?(0,8) && !position_taken?(board, index)
 end
@@ -40,10 +44,6 @@ def turn(board)
     turn(board)                     #reiterate turn if previous turn failed
   end
   display_board(board)            #show the board
-end
-
-def position_taken?(board, location)
-  board[location] != " " && board[location] != ""
 end
 
 def turn_count(board)
@@ -83,7 +83,13 @@ end
 def over?(board)
     won?(board) || draw?(board) || full?(board)
 end
-
+def winner(board)
+  if won?(board)
+    return board[won?(board)[0]]
+  else
+    return nil
+  end
+end
 def play(board)
   while !over?(board)
     turn(board)
@@ -92,12 +98,4 @@ def play(board)
   puts "Congratulations!"
   draw?(board)
   puts "Cat's game!"
-end
-
-def winner(board)
-  if won?(board)
-    return board[won?(board)[0]]
-  else
-    return nil
-  end
 end
