@@ -14,18 +14,18 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-05-21T20:45:58+00:00">2019-05-21T20:45:58+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-05-21T20:46:08+00:00">2019-05-21T20:46:08+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">100.0%</span></span>
+    (<span class="covered_percent"><span class="green">98.08%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         30.0
+         28.2
        </span>
     </span> hits/line)
   </h2>
@@ -33,8 +33,8 @@
   <div>
     <b>1</b> files in total.
     <b>52</b> relevant lines. 
-    <span class="green"><b>52</b> lines covered</span> and
-    <span class="red"><b>0</b> lines missed </span>
+    <span class="green"><b>51</b> lines covered</span> and
+    <span class="red"><b>1</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -52,12 +52,12 @@
       
       <tr>
         <td class="strong"><a href="#c5ece97ba5185f5735fe7f77d973148024ea61d6" class="src_link" title="lib/tic_tac_toe.rb">lib/tic_tac_toe.rb</a></td>
-        <td class="green strong">100.0 %</td>
+        <td class="green strong">98.08 %</td>
         <td>106</td>
         <td>52</td>
-        <td>52</td>
-        <td>0</td>
-        <td>30.0</td>
+        <td>51</td>
+        <td>1</td>
+        <td>28.2</td>
       </tr>
       
     </tbody>
@@ -79,11 +79,11 @@
         <div class="source_table" id="c5ece97ba5185f5735fe7f77d973148024ea61d6">
   <div class="header">
     <h3>lib/tic_tac_toe.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h4><span class="green">98.08 %</span> covered</h4>
     <div>
       <b>52</b> relevant lines. 
-      <span class="green"><b>52</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <span class="green"><b>51</b> lines covered</span> and
+      <span class="red"><b>1</b> lines missed.</span>
     </div>
   </div>
   
@@ -270,8 +270,8 @@
           <code class="ruby">def position_taken?(board, location)</code>
         </li>
       
-        <li class="covered" data-hits="156" data-linenumber="31">
-          <span class="hits">156</span>
+        <li class="covered" data-hits="146" data-linenumber="31">
+          <span class="hits">146</span>
           
           <code class="ruby">  board[location] != &quot; &quot; &amp;&amp; board[location] != &quot;&quot;</code>
         </li>
@@ -486,14 +486,14 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="66" data-linenumber="67">
-          <span class="hits">66</span>
+        <li class="covered" data-hits="64" data-linenumber="67">
+          <span class="hits">64</span>
           
           <code class="ruby">  WIN_COMBINATIONS.detect do |combo|          #iterating (detecting) CONSTANT for winning combos</code>
         </li>
       
-        <li class="covered" data-hits="414" data-linenumber="68">
-          <span class="hits">414</span>
+        <li class="covered" data-hits="376" data-linenumber="68">
+          <span class="hits">376</span>
           
           <code class="ruby">    board[combo[0]] == board[combo[1]] &amp;&amp;     #conditions for a WIN</code>
         </li>
@@ -534,14 +534,14 @@
           <code class="ruby">def full?(board)          #accepts board, returns true if every element in the board contains either an &quot;X&quot; or an &quot;O&quot;</code>
         </li>
       
-        <li class="covered" data-hits="33" data-linenumber="75">
-          <span class="hits">33</span>
+        <li class="covered" data-hits="27" data-linenumber="75">
+          <span class="hits">27</span>
           
           <code class="ruby">  board.all? do |token|   #iterator: all? block passed to it must return true for every iteration</code>
         </li>
       
-        <li class="covered" data-hits="150" data-linenumber="76">
-          <span class="hits">150</span>
+        <li class="covered" data-hits="121" data-linenumber="76">
+          <span class="hits">121</span>
           
           <code class="ruby">    token == &quot;X&quot; ||       #true for only X and O&#39;s</code>
         </li>
@@ -576,8 +576,8 @@
           <code class="ruby">def draw?(board)</code>
         </li>
       
-        <li class="covered" data-hits="23" data-linenumber="82">
-          <span class="hits">23</span>
+        <li class="covered" data-hits="22" data-linenumber="82">
+          <span class="hits">22</span>
           
           <code class="ruby">  !won?(board) &amp;&amp; full?(board)      #call to methods if board NOT won, but is FULL! Returns true only in those cases!</code>
         </li>
@@ -702,14 +702,14 @@
           <code class="ruby">    puts &quot;Congratulations #{winner(board)}!&quot;</code>
         </li>
       
-        <li class="covered" data-hits="7" data-linenumber="103">
-          <span class="hits">7</span>
+        <li class="covered" data-hits="5" data-linenumber="103">
+          <span class="hits">5</span>
           
-          <code class="ruby">  else draw?(board)</code>
+          <code class="ruby">  elseif draw?(board)</code>
         </li>
       
-        <li class="covered" data-hits="7" data-linenumber="104">
-          <span class="hits">7</span>
+        <li class="missed" data-hits="0" data-linenumber="104">
+          
           
           <code class="ruby">    puts &quot;Cat&#39;s game!&quot;</code>
         </li>
