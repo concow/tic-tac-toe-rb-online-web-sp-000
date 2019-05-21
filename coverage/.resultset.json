@@ -2,6 +2,8 @@
   "RSpec": {
     "coverage": {
       "/home/concow/tic-tac-toe-rb-online-web-sp-000/lib/tic_tac_toe.rb": [
+        1,
+        null,
         null,
         1,
         null,
@@ -111,6 +113,6 @@
         null
       ]
     },
-    "timestamp": 1558469338
+    "timestamp": 1558469687
   }
 }
