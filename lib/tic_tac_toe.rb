@@ -70,6 +70,7 @@ def won?(board)     #check the board return true if win, false if not
     position_taken?(board, combo[0])           #takes board and index as arguments, returns true if position empty
   end
 end
+
 def full?(board)          #accepts board, returns true if every element in the board contains either an "X" or an "O"
   board.all? do |token|   #iterator: all? block passed to it must return true for every iteration
     token == "X" ||       #true for only X and O's
