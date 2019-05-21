@@ -40,7 +40,8 @@ def turn(board)
   input = gets.strip                #create local variable 'input' that gets input from player. 'strip' eliminates whitespace.
   index = input_to_index(input)     #convert input to correct index with method call (#input_to_index(input))
   if valid_move?(board, index)      #if move is valid (allowed)
-    move(board, index, current_player(board))              #call to #move making user move for index
+    move(board, index, current_player(board))              #call to #move making user move for index, and current_player for X or O!
+    display_board
   else
     turn(board)                     #reiterate turn if previous turn failed
   end
