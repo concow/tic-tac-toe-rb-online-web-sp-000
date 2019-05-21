@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-05-21T20:38:22+00:00">2019-05-21T20:38:22+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-05-21T20:38:36+00:00">2019-05-21T20:38:36+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,7 +25,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         12.8
+         12.0
        </span>
     </span> hits/line)
   </h2>
@@ -57,7 +57,7 @@
         <td>52</td>
         <td>51</td>
         <td>1</td>
-        <td>12.8</td>
+        <td>12.0</td>
       </tr>
       
     </tbody>
@@ -249,7 +249,7 @@
         <li class="covered" data-hits="3" data-linenumber="27">
           <span class="hits">3</span>
           
-          <code class="ruby">  board[index] = current_player(board)</code>
+          <code class="ruby">  board[index] = value</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="28">
@@ -384,26 +384,26 @@
           <code class="ruby">def turn_count(board)</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="50">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="2" data-linenumber="50">
+          <span class="hits">2</span>
           
           <code class="ruby">  turns = 0                             #initialize turns variable starting at 0</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="51">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="2" data-linenumber="51">
+          <span class="hits">2</span>
           
           <code class="ruby">  board.each do |token|                 #iterate each element on board. token is variable label for our array to be passed into the block of code</code>
         </li>
       
-        <li class="covered" data-hits="45" data-linenumber="52">
-          <span class="hits">45</span>
+        <li class="covered" data-hits="18" data-linenumber="52">
+          <span class="hits">18</span>
           
           <code class="ruby">    if token == &quot;X&quot; || token == &quot;O&quot;     #if tokens are either X or O add to turn count</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="53">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="5" data-linenumber="53">
+          <span class="hits">5</span>
           
           <code class="ruby">      turns += 1</code>
         </li>
@@ -420,8 +420,8 @@
           <code class="ruby">  end</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="56">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="2" data-linenumber="56">
+          <span class="hits">2</span>
           
           <code class="ruby">  return turns                           #returns turns. Listed in lab requirements. &quot;Control return value of a method that uses iteraton in body&quot;</code>
         </li>
@@ -444,8 +444,8 @@
           <code class="ruby">def current_player(board)</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="60">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="1" data-linenumber="60">
+          <span class="hits">1</span>
           
           <code class="ruby">  turn_count(board) % 2 == 0 ? &quot;X&quot; : &quot;O&quot;    #call #turn_count. Ternary operators ? : looks for true/false values then executes</code>
         </li>
